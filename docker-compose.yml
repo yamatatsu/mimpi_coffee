@@ -5,7 +5,9 @@ services:
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
     environment:
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
+      LANG: ja_JP.UTF-8
   web:
     build: .
     volumes:
