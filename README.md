@@ -59,3 +59,20 @@ https://drive.google.com/file/d/1d1iHwrQb43sJXII_D6hCGHzmM_PNdMO5/view?usp=shari
 ### テスト
 - RSpec
 - GithubActions(CI/CD)
+
+## 開発環境構築
+
+### 準備
+
+1. dockerをインストールする  
+   https://docs.docker.com/get-docker/
+1. build docker image  
+   `docker-compose build .`
+1. create database  
+   `docker-compose run web rails db:create`
+
+### サーバーの起動
+`docker-compose up`
+
+### db migration
+`docker-compose run web rails db:migrate RAILS_ENV=development`
