@@ -67,7 +67,7 @@ https://drive.google.com/file/d/1d1iHwrQb43sJXII_D6hCGHzmM_PNdMO5/view?usp=shari
 1. dockerをインストールする  
    https://docs.docker.com/get-docker/
 1. build docker image  
-   `docker-compose build .`
+   `docker-compose build`
 1. create database  
    `docker-compose run web rails db:create`
 
