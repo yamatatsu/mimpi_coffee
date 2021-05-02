@@ -69,10 +69,10 @@ https://drive.google.com/file/d/1d1iHwrQb43sJXII_D6hCGHzmM_PNdMO5/view?usp=shari
 1. build docker image  
    `docker-compose build`
 1. create database  
-   `docker-compose run web rails db:create`
+   `docker-compose run --rm web rails db:create`
 
 ### サーバーの起動
 `docker-compose up`
 
 ### db migration
-`docker-compose run web rails db:migrate RAILS_ENV=development`
+`docker-compose run --rm web rails db:migrate RAILS_ENV=development`
